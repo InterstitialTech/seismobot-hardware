@@ -1,2 +1,2 @@
-# HomeDots
-Geophone DAQ Board for HomeDots
+# seismobot-hardware
+Geophone DAQ board: KiCad project files
