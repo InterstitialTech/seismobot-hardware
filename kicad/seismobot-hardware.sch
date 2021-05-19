@@ -16,34 +16,356 @@ $EndDescr
 $Comp
 L seismobot-hardware:MAX11200 U?
 U 1 1 6092BE1C
-P 3700 3850
-F 0 "U?" H 3750 4475 50  0000 C CNN
-F 1 "MAX11200" H 3750 4384 50  0000 C CNN
-F 2 "seismobot-hardware:QSOP-16" H 3700 3850 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11200-MAX11210.pdf" H 3700 3850 50  0001 C CNN
-	1    3700 3850
+P 6100 5550
+F 0 "U?" H 6150 6175 50  0000 C CNN
+F 1 "MAX11200" H 6150 6084 50  0000 C CNN
+F 2 "seismobot-hardware:QSOP-16" H 6100 5550 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11200-MAX11210.pdf" H 6100 5550 50  0001 C CNN
+	1    6100 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Raspberry_Pi_2_3 J?
 U 1 1 6092C0A8
-P 6300 3700
-F 0 "J?" H 6300 5181 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 6300 5090 50  0000 C CNN
-F 2 "" H 6300 3700 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6300 3700 50  0001 C CNN
-	1    6300 3700
+P 8700 2700
+F 0 "J?" H 8700 4181 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8700 4090 50  0000 C CNN
+F 2 "" H 8700 2700 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8700 2700 50  0001 C CNN
+	1    8700 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 5500 2    50   Input ~ 0
+MOSI
+Text GLabel 6700 5600 2    50   Input ~ 0
+MISO
+Text GLabel 6700 5400 2    50   Input ~ 0
+CS
+Text GLabel 6700 5300 2    50   Input ~ 0
+SCK
+$Comp
+L power:GND #PWR?
+U 1 1 609D4717
+P 5600 6150
+F 0 "#PWR?" H 5600 5900 50  0001 C CNN
+F 1 "GND" H 5605 5977 50  0000 C CNN
+F 2 "" H 5600 6150 50  0001 C CNN
+F 3 "" H 5600 6150 50  0001 C CNN
+	1    5600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6050 5600 6050
+Wire Wire Line
+	5600 6050 5600 6150
+Wire Wire Line
+	6600 5300 6700 5300
+Wire Wire Line
+	6600 5400 6700 5400
+Wire Wire Line
+	6600 5500 6700 5500
+Wire Wire Line
+	6600 5600 6700 5600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 609E6590
+P 5600 5050
+F 0 "#PWR?" H 5600 4900 50  0001 C CNN
+F 1 "+3V3" H 5615 5223 50  0000 C CNN
+F 2 "" H 5600 5050 50  0001 C CNN
+F 3 "" H 5600 5050 50  0001 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5050 5600 5150
+Wire Wire Line
+	5600 5150 5700 5150
+Wire Wire Line
+	5700 5250 5600 5250
+Wire Wire Line
+	5600 5250 5600 5150
+Connection ~ 5600 5150
+Text GLabel 7800 1900 0    50   Input ~ 0
+TxD
+Text GLabel 7800 1800 0    50   Input ~ 0
+RxD
+Wire Wire Line
+	7900 1800 7800 1800
+Wire Wire Line
+	7900 1900 7800 1900
+$Comp
+L power:GND #PWR?
+U 1 1 609FE4C9
+P 8650 4200
+F 0 "#PWR?" H 8650 3950 50  0001 C CNN
+F 1 "GND" H 8655 4027 50  0000 C CNN
+F 2 "" H 8650 4200 50  0001 C CNN
+F 3 "" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4000 8300 4100
+Wire Wire Line
+	8300 4100 8400 4100
+Wire Wire Line
+	9000 4100 9000 4000
+Wire Wire Line
+	8650 4100 8650 4200
+Connection ~ 8650 4100
+Wire Wire Line
+	8650 4100 8700 4100
+Wire Wire Line
+	8400 4000 8400 4100
+Connection ~ 8400 4100
+Wire Wire Line
+	8400 4100 8500 4100
+Wire Wire Line
+	8500 4000 8500 4100
+Connection ~ 8500 4100
+Wire Wire Line
+	8500 4100 8600 4100
+Wire Wire Line
+	8600 4000 8600 4100
+Connection ~ 8600 4100
+Wire Wire Line
+	8600 4100 8650 4100
+Wire Wire Line
+	8700 4000 8700 4100
+Connection ~ 8700 4100
+Wire Wire Line
+	8700 4100 8800 4100
+Wire Wire Line
+	8800 4000 8800 4100
+Connection ~ 8800 4100
+Wire Wire Line
+	8800 4100 8900 4100
+Wire Wire Line
+	8900 4000 8900 4100
+Connection ~ 8900 4100
+Wire Wire Line
+	8900 4100 9000 4100
+$Comp
+L MCU_Microchip_SAMD:ATSAMD09C13A-SS U?
+U 1 1 60A5764D
+P 3650 3050
+F 0 "U?" H 4150 2350 50  0000 C CNN
+F 1 "ATSAMD09C13A-SS" H 4150 2250 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3650 2000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42414-SAM-D09_Datasheet.pdf" H 3650 2350 50  0001 C CNN
+	1    3650 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_ST_STM32F0:STM32F051T8Yx U?
-U 1 1 609309D2
-P 2250 2100
-F 0 "U?" H 2200 911 50  0000 C CNN
-F 1 "STM32F051T8Yx" H 2200 820 50  0000 C CNN
-F 2 "Package_CSP:ST_WLCSP-36_Die440" H 1750 1100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 2250 2100 50  0001 C CNN
-	1    2250 2100
+L power:GND #PWR?
+U 1 1 60A58B90
+P 3650 3850
+F 0 "#PWR?" H 3650 3600 50  0001 C CNN
+F 1 "GND" H 3655 3677 50  0000 C CNN
+F 2 "" H 3650 3850 50  0001 C CNN
+F 3 "" H 3650 3850 50  0001 C CNN
+	1    3650 3850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3650 3750 3650 3850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60A5A978
+P 3650 1750
+F 0 "#PWR?" H 3650 1600 50  0001 C CNN
+F 1 "+3V3" H 3665 1923 50  0000 C CNN
+F 2 "" H 3650 1750 50  0001 C CNN
+F 3 "" H 3650 1750 50  0001 C CNN
+	1    3650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1750 3650 2350
+$Comp
+L Device:C C?
+U 1 1 60A5E153
+P 3950 1950
+F 0 "C?" H 4100 1950 50  0000 L CNN
+F 1 "4.7 uF" H 4050 1850 50  0000 L CNN
+F 2 "" H 3988 1800 50  0001 C CNN
+F 3 "~" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60A5E7B0
+P 3350 1950
+F 0 "C?" H 3100 1950 50  0000 L CNN
+F 1 "0.1 uF" H 3000 1850 50  0000 L CNN
+F 2 "" H 3388 1800 50  0001 C CNN
+F 3 "~" H 3350 1950 50  0001 C CNN
+	1    3350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1800 3950 1800
+$Comp
+L power:GND #PWR?
+U 1 1 60A61811
+P 3350 2100
+F 0 "#PWR?" H 3350 1850 50  0001 C CNN
+F 1 "GND" H 3355 1927 50  0000 C CNN
+F 2 "" H 3350 2100 50  0001 C CNN
+F 3 "" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A6216A
+P 3950 2100
+F 0 "#PWR?" H 3950 1850 50  0001 C CNN
+F 1 "GND" H 3955 1927 50  0000 C CNN
+F 2 "" H 3950 2100 50  0001 C CNN
+F 3 "" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 60A6707B
+P 2850 3400
+F 0 "Y?" V 2850 3150 50  0000 L CNN
+F 1 "32768 Hz" V 3100 3250 50  0000 L CNN
+F 2 "" H 2850 3400 50  0001 C CNN
+F 3 "~" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 3250 2850 3250
+Wire Wire Line
+	3150 3350 3150 3550
+Wire Wire Line
+	3150 3550 2850 3550
+$Comp
+L power:GND #PWR?
+U 1 1 60A7285D
+P 2550 3850
+F 0 "#PWR?" H 2550 3600 50  0001 C CNN
+F 1 "GND" H 2555 3677 50  0000 C CNN
+F 2 "" H 2550 3850 50  0001 C CNN
+F 3 "" H 2550 3850 50  0001 C CNN
+	1    2550 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3250
+Connection ~ 2850 3550
+Wire Wire Line
+	2550 3250 2550 3550
+Wire Wire Line
+	2550 3250 2850 3250
+Wire Wire Line
+	2550 3550 2850 3550
+Connection ~ 2550 3550
+Wire Wire Line
+	2550 3550 2550 3850
+Text GLabel 4250 2850 2    50   Input ~ 0
+MISO
+Text GLabel 4250 2950 2    50   Input ~ 0
+CS
+Text GLabel 4250 3050 2    50   Input ~ 0
+MOSI
+Text GLabel 4250 3150 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4150 2850 4250 2850
+Wire Wire Line
+	4150 2950 4250 2950
+Wire Wire Line
+	4150 3050 4250 3050
+Wire Wire Line
+	4150 3150 4250 3150
+Text GLabel 4250 3350 2    50   Input ~ 0
+RX
+Text GLabel 4250 3250 2    50   Input ~ 0
+TX
+Wire Wire Line
+	4150 3250 4250 3250
+Wire Wire Line
+	4150 3350 4250 3350
+$Comp
+L Device:R R?
+U 1 1 60A995F0
+P 2550 2800
+F 0 "R?" H 2620 2846 50  0000 L CNN
+F 1 "1k" H 2620 2755 50  0000 L CNN
+F 2 "" V 2480 2800 50  0001 C CNN
+F 3 "~" H 2550 2800 50  0001 C CNN
+	1    2550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2950 2550 2950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60A9BDF0
+P 2550 2650
+F 0 "#PWR?" H 2550 2500 50  0001 C CNN
+F 1 "+3V3" H 2565 2823 50  0000 C CNN
+F 2 "" H 2550 2650 50  0001 C CNN
+F 3 "" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 2950 0    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	2400 2950 2550 2950
+Connection ~ 2550 2950
+Text GLabel 3050 3050 0    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	3150 3050 3050 3050
+Text GLabel 3050 2750 0    50   Input ~ 0
+~RST
+Wire Wire Line
+	3050 2750 3150 2750
+$Comp
+L Device:LED D?
+U 1 1 60AAC98C
+P 4700 2750
+F 0 "D?" H 4693 2495 50  0000 C CNN
+F 1 "LED" H 4693 2586 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "~" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60AAF3AD
+P 4900 2900
+F 0 "R?" H 4830 2854 50  0000 R CNN
+F 1 "100" H 4830 2945 50  0000 R CNN
+F 2 "" V 4830 2900 50  0001 C CNN
+F 3 "~" H 4900 2900 50  0001 C CNN
+	1    4900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AAFB92
+P 4900 3100
+F 0 "#PWR?" H 4900 2850 50  0001 C CNN
+F 1 "GND" H 4905 2927 50  0000 C CNN
+F 2 "" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2750 4550 2750
+Wire Wire Line
+	4850 2750 4900 2750
+Wire Wire Line
+	4900 3050 4900 3100
 $EndSCHEMATC
