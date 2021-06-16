@@ -160,7 +160,7 @@ F 3 "" H 9850 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 4550 10150 4550
+	9550 4550 9850 4550
 $Comp
 L power:GND #PWR024
 U 1 1 60A7285D
@@ -764,10 +764,10 @@ F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 2100 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OPA2156xD U2
+L Amplifier_Operational:OPA2156xD U1
 U 2 1 60CB8779
 P 1400 1800
-F 0 "U2" H 1500 1950 50  0000 C CNN
+F 0 "U1" H 1500 1950 50  0000 C CNN
 F 1 "OPA2156xD" H 1450 1600 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1500 1800 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 1650 1950 50  0001 C CNN
@@ -777,12 +777,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:OPA2156xD U2
 U 3 1 60CB8B69
-P 6400 7100
-F 0 "U2" H 6458 7146 50  0000 L CNN
-F 1 "OPA2156xD" H 6458 7055 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6500 7100 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6650 7250 50  0001 C CNN
-	3    6400 7100
+P 6350 7100
+F 0 "U2" H 6250 6750 50  0000 L CNN
+F 1 "OPA2156xD" H 6408 7055 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 7100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6600 7250 50  0001 C CNN
+	3    6350 7100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -791,7 +791,7 @@ U 1 1 60CB99E3
 P 1100 6600
 F 0 "R3" H 900 6650 50  0000 L CNN
 F 1 "3.5" H 900 6550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 1100 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 1100 6600 50  0001 C CNN
 F 3 "~" H 1100 6600 50  0001 C CNN
 	1    1100 6600
 	1    0    0    -1  
@@ -928,7 +928,7 @@ L Amplifier_Operational:OPA2156xD U3
 U 1 1 60D59B4E
 P 3100 7050
 F 0 "U3" H 3200 6900 50  0000 C CNN
-F 1 "OPA2156xD" H 3250 7250 50  0000 C CNN
+F 1 "LTC6011" H 3250 7250 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3200 7050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 3350 7200 50  0001 C CNN
 	1    3100 7050
@@ -995,11 +995,11 @@ Wire Wire Line
 Wire Wire Line
 	2250 6950 2150 6950
 $Comp
-L Amplifier_Operational:OPA2156xD U6
+L Amplifier_Operational:OPA2156xD U3
 U 2 1 60DC9C62
 P 4050 7250
-F 0 "U6" H 4150 7100 50  0000 C CNN
-F 1 "OPA2156xD" H 4100 7500 50  0000 C CNN
+F 0 "U3" H 4150 7100 50  0000 C CNN
+F 1 "LTC6011" H 4100 7500 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4150 7250 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 4300 7400 50  0001 C CNN
 	2    4050 7250
@@ -1080,7 +1080,7 @@ L Device:R_Small_US R28
 U 1 1 60E14A21
 P 4500 7250
 F 0 "R28" V 4400 7200 50  0000 C CNN
-F 1 "100" V 4400 7350 50  0000 C CNN
+F 1 "100" V 4600 7200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 4500 7250 50  0001 C CNN
 F 3 "~" H 4500 7250 50  0001 C CNN
 	1    4500 7250
@@ -1101,8 +1101,8 @@ $Comp
 L Amplifier_Operational:OPA2156xD U1
 U 3 1 60EA5541
 P 6200 7100
-F 0 "U1" H 6258 7146 50  0000 L CNN
-F 1 "OPA2156xD" H 6258 7055 50  0000 L CNN
+F 0 "U1" H 6100 7100 50  0000 L CNN
+F 1 "OPA2156xD" H 6258 7055 50  0001 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6300 7100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6450 7250 50  0001 C CNN
 	3    6200 7100
@@ -1120,17 +1120,6 @@ F 3 "" H 6200 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
-U 1 1 60EB5A98
-P 6400 7400
-F 0 "#PWR018" H 6400 7150 50  0001 C CNN
-F 1 "GND" H 6405 7227 50  0000 C CNN
-F 2 "" H 6400 7400 50  0001 C CNN
-F 3 "" H 6400 7400 50  0001 C CNN
-	1    6400 7400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR014
 U 1 1 60EB5D6E
 P 6200 6800
@@ -1139,17 +1128,6 @@ F 1 "+3V3" H 6215 6973 50  0000 C CNN
 F 2 "" H 6200 6800 50  0001 C CNN
 F 3 "" H 6200 6800 50  0001 C CNN
 	1    6200 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR017
-U 1 1 60EB6425
-P 6400 6800
-F 0 "#PWR017" H 6400 6650 50  0001 C CNN
-F 1 "+3V3" H 6415 6973 50  0000 C CNN
-F 2 "" H 6400 6800 50  0001 C CNN
-F 3 "" H 6400 6800 50  0001 C CNN
-	1    6400 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1246,7 +1224,7 @@ L Device:R_Small_US R23
 U 1 1 60E14DCA
 P 3600 6550
 F 0 "R23" V 3500 6500 50  0000 C CNN
-F 1 "100" V 3500 6650 50  0000 C CNN
+F 1 "100" V 3700 6500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3600 6550 50  0001 C CNN
 F 3 "~" H 3600 6550 50  0001 C CNN
 	1    3600 6550
@@ -1262,10 +1240,10 @@ Wire Wire Line
 Wire Wire Line
 	1100 7000 1100 7100
 $Comp
-L Amplifier_Operational:OPA2156xD U1
+L Amplifier_Operational:OPA2156xD U2
 U 2 1 60C9D32E
 P 1200 5100
-F 0 "U1" H 1200 5467 50  0000 C CNN
+F 0 "U2" H 1200 5467 50  0000 C CNN
 F 1 "OPA2156xD" H 1200 5376 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1300 5100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 1450 5250 50  0001 C CNN
@@ -1435,8 +1413,8 @@ $Comp
 L Device:R_Small_US R30
 U 1 1 60F54F16
 P 4950 5050
-F 0 "R30" H 5018 5096 50  0000 L CNN
-F 1 "100k" H 5018 5005 50  0000 L CNN
+F 0 "R30" V 5000 5100 50  0000 L CNN
+F 1 "100k" V 5000 4800 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 4950 5050 50  0001 C CNN
 F 3 "~" H 4950 5050 50  0001 C CNN
 	1    4950 5050
@@ -1475,10 +1453,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 5050 5250 4900
 $Comp
-L Amplifier_Operational:OPA2156xD U3
+L Amplifier_Operational:OPA2156xD U6
 U 2 1 60FB3297
 P 3700 5300
-F 0 "U3" H 3700 5667 50  0000 C CNN
+F 0 "U6" H 3700 5667 50  0000 C CNN
 F 1 "OPA2156xD" H 3700 5576 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3800 5300 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 3950 5450 50  0001 C CNN
@@ -1510,7 +1488,7 @@ L Amplifier_Operational:OPA2156xD U6
 U 1 1 6110D4FF
 P 4900 5400
 F 0 "U6" H 4900 5600 50  0000 C CNN
-F 1 "OPA2156xD" H 4950 5200 50  0000 C CNN
+F 1 "OPA2156xD" H 4950 5700 50  0001 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 5400 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 5150 5550 50  0001 C CNN
 	1    4900 5400
@@ -1654,8 +1632,8 @@ $Comp
 L Device:R_Small_US R36
 U 1 1 611421D2
 P 6200 5150
-F 0 "R36" H 6268 5196 50  0000 L CNN
-F 1 "100k" H 6268 5105 50  0000 L CNN
+F 0 "R36" V 6250 5250 50  0000 L CNN
+F 1 "100k" V 6250 4900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 6200 5150 50  0001 C CNN
 F 3 "~" H 6200 5150 50  0001 C CNN
 	1    6200 5150
@@ -1676,7 +1654,7 @@ $Comp
 L Device:C_Small C28
 U 1 1 611421DE
 P 6400 5000
-F 0 "C28" V 6300 5000 50  0000 C CNN
+F 0 "C28" V 6350 5100 50  0000 C CNN
 F 1 "10u" V 6500 5000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 6400 5000 50  0001 C CNN
 F 3 "~" H 6400 5000 50  0001 C CNN
@@ -1799,7 +1777,7 @@ U 1 1 60A6707B
 P 9200 5850
 F 0 "Y1" V 9100 5650 50  0000 L CNN
 F 1 "32768 Hz" V 9450 5700 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_EuroQuartz_EQ161-2Pin_3.2x1.5mm" H 9200 5850 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABS25-4Pin_8.0x3.8mm" H 9200 5850 50  0001 C CNN
 F 3 "~" H 9200 5850 50  0001 C CNN
 	1    9200 5850
 	0    1    1    0   
@@ -1827,7 +1805,7 @@ F 3 "" H 9550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9850 4500 9850 4800
+	9850 4500 9850 4550
 Wire Wire Line
 	9850 6200 9850 6250
 $Comp
@@ -2105,4 +2083,131 @@ Text GLabel 5050 1550 0    50   Input ~ 0
 OUTa+
 Text GLabel 5050 2150 0    50   Input ~ 0
 OUTa-
+$Comp
+L Amplifier_Operational:OPA2156xD U3
+U 3 1 61F2615D
+P 6500 7100
+F 0 "U3" H 6450 7450 50  0000 L CNN
+F 1 "LTC6011" H 6558 7055 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 7100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6750 7250 50  0001 C CNN
+	3    6500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2156xD U6
+U 3 1 61F3CD1F
+P 6650 7100
+F 0 "U6" H 6600 6750 50  0000 L CNN
+F 1 "OPA2156xD" H 6708 7055 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 7100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6900 7250 50  0001 C CNN
+	3    6650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2156xD U7
+U 3 1 61F53440
+P 6800 7100
+F 0 "U7" H 6750 7450 50  0000 L CNN
+F 1 "OPA2156xD" H 6858 7055 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6900 7100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 7050 7250 50  0001 C CNN
+	3    6800 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6800 6350 6800
+Connection ~ 6200 6800
+Connection ~ 6350 6800
+Wire Wire Line
+	6350 6800 6500 6800
+Connection ~ 6650 6800
+Wire Wire Line
+	6650 6800 6800 6800
+Wire Wire Line
+	6200 7400 6350 7400
+Connection ~ 6200 7400
+Connection ~ 6350 7400
+Wire Wire Line
+	6350 7400 6500 7400
+Connection ~ 6650 7400
+Wire Wire Line
+	6650 7400 6800 7400
+Connection ~ 6500 7400
+Connection ~ 6500 6800
+Wire Wire Line
+	6500 6800 6650 6800
+Wire Wire Line
+	6500 7400 6650 7400
+$Comp
+L Amplifier_Operational:OPA2156xD U7
+U 1 1 620E3DBC
+P 7150 5600
+F 0 "U7" H 7150 5967 50  0000 C CNN
+F 1 "OPA2156xD" H 7150 5876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7250 5600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 7400 5750 50  0001 C CNN
+	1    7150 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R39
+U 1 1 620E5F74
+P 6650 5500
+F 0 "R39" V 6550 5500 50  0000 C CNN
+F 1 "5k" V 6750 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 5500 50  0001 C CNN
+F 3 "~" H 6650 5500 50  0001 C CNN
+	1    6650 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R40
+U 1 1 620E65A2
+P 7150 5300
+F 0 "R40" V 7050 5300 50  0000 C CNN
+F 1 "5k" V 7250 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7150 5300 50  0001 C CNN
+F 3 "~" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5500 6550 5500
+Connection ~ 6500 5500
+Wire Wire Line
+	6750 5500 6800 5500
+Wire Wire Line
+	7050 5300 6800 5300
+Wire Wire Line
+	6800 5300 6800 5500
+Connection ~ 6800 5500
+Wire Wire Line
+	6800 5500 6850 5500
+Wire Wire Line
+	7250 5300 7450 5300
+Wire Wire Line
+	7450 5300 7450 5600
+Text GLabel 6750 5750 3    50   Input ~ 0
+1.5v
+Wire Wire Line
+	6850 5700 6750 5700
+Wire Wire Line
+	6750 5700 6750 5750
+Wire Wire Line
+	7450 5600 7500 5600
+Connection ~ 7450 5600
+Wire Wire Line
+	6500 5000 7500 5000
+Connection ~ 6500 5000
+Text GLabel 7500 5000 2    50   Input ~ 0
+OUTb+
+Text GLabel 7500 5600 2    50   Input ~ 0
+OUTb-
+Connection ~ 9850 4550
+Wire Wire Line
+	9850 4550 10150 4550
+Wire Wire Line
+	9850 4550 9850 4800
 $EndSCHEMATC
