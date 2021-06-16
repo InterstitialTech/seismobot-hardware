@@ -1241,13 +1241,13 @@ Wire Wire Line
 	1100 7000 1100 7100
 $Comp
 L Amplifier_Operational:OPA2156xD U2
-U 2 1 60C9D32E
+U 1 1 60C9D32E
 P 1200 5100
 F 0 "U2" H 1200 5467 50  0000 C CNN
 F 1 "OPA2156xD" H 1200 5376 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1300 5100 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 1450 5250 50  0001 C CNN
-	2    1200 5100
+	1    1200 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1262,13 +1262,13 @@ Wire Wire Line
 	700  5000 900  5000
 $Comp
 L Amplifier_Operational:OPA2156xD U2
-U 1 1 60CED4A0
+U 2 1 60CED4A0
 P 2450 5200
 F 0 "U2" H 2450 5400 50  0000 C CNN
 F 1 "OPA2156xD" H 2500 5000 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2550 5200 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 2700 5350 50  0001 C CNN
-	1    2450 5200
+	2    2450 5200
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1673,13 +1673,13 @@ Wire Wire Line
 	6500 5150 6500 5000
 $Comp
 L Amplifier_Operational:OPA2156xD U7
-U 2 1 611421E9
+U 1 1 611421E9
 P 6150 5500
 F 0 "U7" H 6150 5867 50  0000 C CNN
 F 1 "OPA2156xD" H 6150 5776 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6250 5500 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6400 5650 50  0001 C CNN
-	2    6150 5500
+	1    6150 5500
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -2142,13 +2142,13 @@ Wire Wire Line
 	6500 7400 6650 7400
 $Comp
 L Amplifier_Operational:OPA2156xD U7
-U 1 1 620E3DBC
+U 2 1 620E3DBC
 P 7150 5600
 F 0 "U7" H 7150 5967 50  0000 C CNN
 F 1 "OPA2156xD" H 7150 5876 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7250 5600 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 7400 5750 50  0001 C CNN
-	1    7150 5600
+	2    7150 5600
 	1    0    0    1   
 $EndComp
 $Comp
@@ -2210,4 +2210,8 @@ Wire Wire Line
 	9850 4550 10150 4550
 Wire Wire Line
 	9850 4550 9850 4800
+Text GLabel 5550 1550 2    50   Input ~ 0
+OUTb+
+Text GLabel 5550 2150 2    50   Input ~ 0
+OUTb-
 $EndSCHEMATC
