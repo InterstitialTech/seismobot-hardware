@@ -2343,10 +2343,10 @@ Wire Wire Line
 	8450 3550 8650 3550
 Connection ~ 8950 3350
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP2
 U 1 1 6146A6B1
 P 8850 3550
-F 0 "TP?" H 8792 3576 50  0000 R CNN
+F 0 "TP2" H 8792 3576 50  0000 R CNN
 F 1 "TestPoint" H 8792 3667 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9050 3550 50  0001 C CNN
 F 3 "~" H 9050 3550 50  0001 C CNN
@@ -2354,10 +2354,10 @@ F 3 "~" H 9050 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 6146B4AA
 P 8650 3550
-F 0 "TP?" H 8592 3576 50  0000 R CNN
+F 0 "TP1" H 8592 3576 50  0000 R CNN
 F 1 "TestPoint" H 8592 3667 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8850 3550 50  0001 C CNN
 F 3 "~" H 8850 3550 50  0001 C CNN

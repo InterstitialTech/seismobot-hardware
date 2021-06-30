@@ -145,6 +145,23 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -389,6 +406,23 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X VDDA 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# seismobot-hardware_AP7340
+#
+DEF seismobot-hardware_AP7340 U 0 40 Y Y 1 F N
+F0 "U" -200 150 50 H V C CNN
+F1 "seismobot-hardware_AP7340" -100 -250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 100 200 -200 0 1 0 N
+X Vout 1 300 50 100 L 50 50 1 1 I
+X Gnd 2 300 -150 100 L 50 50 1 1 I
+X En 3 -350 -150 100 R 50 50 1 1 I
+X Vin 4 -350 50 100 R 50 50 1 1 I
+X thermal 5 -350 -50 100 R 50 50 1 1 I N
 ENDDRAW
 ENDDEF
 #
