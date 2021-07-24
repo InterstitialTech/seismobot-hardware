@@ -1051,7 +1051,7 @@ F 3 "~" H 750 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	850  6700 1100 6700
+	850  6700 900  6700
 Text Notes 550  1150 0    50   ~ 0
 Negative Input
 Text Notes 550  650  0    50   ~ 0
@@ -1060,7 +1060,7 @@ Connection ~ 4900 7250
 Wire Wire Line
 	1100 6700 1100 6800
 Wire Wire Line
-	850  7100 1100 7100
+	850  7100 900  7100
 Wire Wire Line
 	1100 7000 1100 7100
 $Comp
@@ -2406,5 +2406,92 @@ F 2 "" H 8100 3350 50  0001 C CNN
 F 3 "" H 8100 3350 50  0001 C CNN
 	1    8100 3350
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 60E4F5E6
+P 8450 4250
+F 0 "J3" H 8558 4631 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 8558 4540 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 8450 4250 50  0001 C CNN
+F 3 "~" H 8450 4250 50  0001 C CNN
+	1    8450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0113
+U 1 1 60E5097B
+P 8950 4050
+F 0 "#PWR0113" H 8950 3900 50  0001 C CNN
+F 1 "VDD" H 8965 4223 50  0000 C CNN
+F 2 "" H 8950 4050 50  0001 C CNN
+F 3 "" H 8950 4050 50  0001 C CNN
+	1    8950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4050 8950 4050
+Text GLabel 8950 4150 2    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	8650 4150 8950 4150
+$Comp
+L power:GND #PWR0114
+U 1 1 60E8AE9A
+P 9300 4250
+F 0 "#PWR0114" H 9300 4000 50  0001 C CNN
+F 1 "GND" H 9305 4077 50  0000 C CNN
+F 2 "" H 9300 4250 50  0001 C CNN
+F 3 "" H 9300 4250 50  0001 C CNN
+	1    9300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4250 9300 4250
+Text GLabel 8950 4350 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	8650 4350 8950 4350
+Text GLabel 9000 4500 2    50   Input ~ 0
+~RST
+Wire Wire Line
+	8650 4450 8950 4450
+Wire Wire Line
+	8950 4450 8950 4500
+Wire Wire Line
+	8950 4500 9000 4500
+$Comp
+L power:GND #PWR0115
+U 1 1 60F1D12E
+P 8850 4550
+F 0 "#PWR0115" H 8850 4300 50  0001 C CNN
+F 1 "GND" H 8855 4377 50  0000 C CNN
+F 2 "" H 8850 4550 50  0001 C CNN
+F 3 "" H 8850 4550 50  0001 C CNN
+	1    8850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4550 8850 4550
+Wire Wire Line
+	900  6700 900  6800
+Connection ~ 900  6700
+Wire Wire Line
+	900  6700 1100 6700
+Wire Wire Line
+	900  7000 900  7100
+Connection ~ 900  7100
+Wire Wire Line
+	900  7100 1100 7100
+$Comp
+L Device:R_Small_US R14
+U 1 1 610155EF
+P 900 6900
+F 0 "R14" V 1000 6800 50  0000 C CNN
+F 1 "DNP" V 1000 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 900 6900 50  0001 C CNN
+F 3 "~" H 900 6900 50  0001 C CNN
+	1    900  6900
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
