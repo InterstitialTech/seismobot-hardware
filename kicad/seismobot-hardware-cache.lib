@@ -1,31 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Amplifier_Operational_OPA2156xD
-#
-DEF Amplifier_Operational_OPA2156xD U 0 5 Y Y 3 L N
-F0 "U" 100 250 50 H V L CNN
-F1 "Amplifier_Operational_OPA2156xD" 100 150 50 H V L CNN
-F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 0 50 H I C CNN
-F3 "" 250 150 50 H I C CNN
-ALIAS OPA2197xD OPA2196xD AD8676xR OPA1692xD MCP6L02x-xSN NCS20072D OPA2156xD
-$FPLIST
- SOIC*3.9x4.9mm*P1.27mm*
-$ENDFPLIST
-DRAW
-P 4 1 1 10 200 0 -200 200 -200 -200 200 0 f
-P 4 2 1 10 200 0 -200 200 -200 -200 200 0 f
-X ~ 1 300 0 100 L 50 50 1 1 O
-X - 2 -300 -100 100 R 50 50 1 1 I
-X + 3 -300 100 100 R 50 50 1 1 I
-X + 5 -300 100 100 R 50 50 2 1 I
-X - 6 -300 -100 100 R 50 50 2 1 I
-X ~ 7 300 0 100 L 50 50 2 1 O
-X V- 4 0 -300 150 U 50 50 3 1 W
-X V+ 8 0 300 150 D 50 50 3 1 W
-ENDDRAW
-ENDDEF
-#
 # Connector_Conn_01x06_Male
 #
 DEF Connector_Conn_01x06_Male J 0 40 Y N 1 F N
@@ -221,9 +196,6 @@ F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  SolderJumper*Bridged*
- Jumper*
- TestPoint*2Pads*
- TestPoint*Bridge*
 $ENDFPLIST
 DRAW
 A -60 10 64 386 1413 0 1 0 N -10 50 -110 50
@@ -250,9 +222,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 8 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -303,9 +275,7 @@ F1 "Jumper_Jumper_2_Open" 0 -90 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Jumper*
- TestPoint*2Pads*
- TestPoint*Bridge*
+ SolderJumper*Open*
 $ENDFPLIST
 DRAW
 A 0 -30 100 1269 531 0 1 0 N -60 50 60 50
@@ -419,9 +389,8 @@ F1 "power_VDD" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
 X VDD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
@@ -434,10 +403,33 @@ F1 "power_VDDA" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
 X VDDA 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# seismobot-hardware-rescue_OPA2156xD-Amplifier_Operational
+#
+DEF seismobot-hardware-rescue_OPA2156xD-Amplifier_Operational U 0 5 Y Y 3 L N
+F0 "U" 100 250 50 H V L CNN
+F1 "seismobot-hardware-rescue_OPA2156xD-Amplifier_Operational" 100 150 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 0 50 H I C CNN
+F3 "" 250 150 50 H I C CNN
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+P 4 1 1 10 200 0 -200 200 -200 -200 200 0 f
+P 4 2 1 10 200 0 -200 200 -200 -200 200 0 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X + 5 -300 100 100 R 50 50 2 1 I
+X - 6 -300 -100 100 R 50 50 2 1 I
+X ~ 7 300 0 100 L 50 50 2 1 O
+X V- 4 0 -300 150 U 50 50 3 1 W
+X V+ 8 0 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
