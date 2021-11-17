@@ -4,3 +4,16 @@
 *.sch-bak
 *.swp
 .~lock.*
+*.drl
+*.gbrjob
+*.g2
+*.g3
+*.gto
+*.gbo
+*.gm1
+*.gtl
+*.gts
+*.gbp
+*.gbs
+*.gtp
+*.gbl
