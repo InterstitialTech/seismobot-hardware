@@ -18,3 +18,6 @@
 *.gtp
 *.gbl
 *.pos
+kicad/seismobot-hardware-mini-cache.lib
+kicad/seismobot-hardware-mini.pro
+kicad/seismobot-hardware-mini.sch
