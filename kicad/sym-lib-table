@@ -2,4 +2,5 @@
   (lib (name dk_Data-Acquisition-ADCs-DACs-Special-Purpose)(type Legacy)(uri C:/Users/muffin/Documents/GitHub/digikey-kicad-library/digikey-symbols/dk_Data-Acquisition-ADCs-DACs-Special-Purpose.lib)(options "")(descr ""))
   (lib (name dk_Data-Acquisition-Analog-to-Digital-Converters-ADC)(type Legacy)(uri C:/Users/muffin/Documents/GitHub/digikey-kicad-library/digikey-symbols/dk_Data-Acquisition-Analog-to-Digital-Converters-ADC.lib)(options "")(descr ""))
   (lib (name seismobot-hardware)(type Legacy)(uri ${KIPRJMOD}/seismobot-hardware.lib)(options "")(descr ""))
+  (lib (name seismobot-hardware-rescue)(type Legacy)(uri ${KIPRJMOD}/seismobot-hardware-rescue.lib)(options "")(descr ""))
 )
